@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+
+    svg {
+        display: none;
+    }
+
+
+    main {
+        display: inline-block;
+        width: 100vh;
+    }
+
+    .about{
+        width: 100px;
+    }
+
+    .text_about{
+        margin-right: 400px;
+    
+    }
+    
+}

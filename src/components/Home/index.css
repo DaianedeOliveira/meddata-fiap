@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+body{
+    width: 1000px;
+}
+
+img {
+    display: none;
+}
+
+
+    p{
+        display: inline-block;
+        font-size: 15px;
+        width: 10%;
+    }
+    
+}
