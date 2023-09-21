@@ -1,17 +1,18 @@
-@media (max-width: 600px) {
-body{
-    width: 1000px;
-}
-
-img {
-    display: none;
-}
-
-
-    p{
-        display: inline-block;
-        font-size: 15px;
-        width: 10%;
+@media (max-width: 900px) {
+    body{
+        overflow-x: hidden;
     }
+    img{display: none;
+    
+    }
+
+
+    p {
+        font-size: 15px;
+        width: 25%;
+    }
+.button_home{
+    margin-top: 20px;
+}
     
 }

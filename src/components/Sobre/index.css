@@ -1,9 +1,8 @@
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     svg {
         display: none;
     }
-
 
     main {
         display: inline-block;
@@ -17,6 +16,10 @@
     .text_about{
         margin-right: 400px;
     
+    }
+
+    .box2{
+        display: inline-block;
     }
     
 }

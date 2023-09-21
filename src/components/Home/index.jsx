@@ -67,7 +67,7 @@ button:hover {
 }
 
 button:active {
-    background-color: aliceblue;
+    background-color: #1b1c1c;
     color: var(--main);
     transform: translateY(4px);
     border: 2px solid var(--main);

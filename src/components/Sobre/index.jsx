@@ -1,5 +1,10 @@
 import { styled } from 'styled-components'
 import './index.css'
+import 'animate.css';
+import boxone from './../../assets/Group 18.png'
+import boxtwo from './../../assets/Group 16.png'
+import boxthree from './../../assets/Group 17.png'
+
 
 
 const Box = styled.div`
@@ -49,6 +54,22 @@ margin-top:35px;
     
     }
 
+    .imagens-box{
+        margin-left: 25%;
+        margin-top: 6%;
+    }
+
+    .box2:hover{
+        transform: scale(1.2);
+    }
+
+    .divide{
+        width:100%;
+        height: 400px;
+        background-color: var(--tercery);
+    }
+
+
 `
 
 
@@ -60,7 +81,7 @@ function Sobre() {
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F8F1F1" fillOpacity="1" d="M0,160L48,186.7C96,213,192,267,288,261.3C384,256,480,192,576,192C672,192,768,256,864,272C960,288,1056,256,1152,229.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
 <main>
-            <div className='title_section'>  
+            <div className="title_section animate__animated animate__fadeInLeft">  
             <h1 className='title'>Sobre</h1> 
             </div>
 
@@ -71,6 +92,16 @@ Por isso, trazemos em um só lugar todos esses dados, levando praticidade para o
                     
                 </p>
             </div>
+
+<div className="imagens-box  animate__animated animate__fadeInLeft">
+            <img  className="box2" src={boxone} alt="medicine"/>
+            <img className="box2" src={boxtwo} alt="health"/>
+            <img className="box2" src={boxthree} alt="smartphone with robot"/>
+            </div>
+
+
+            <div className='divide'></div>
+
             </main>
 
         </Box>
