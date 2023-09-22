@@ -67,7 +67,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #1b1c1c;
+    background-color: #adc0d1;
     color: var(--main);
     transform: translateY(4px);
     border: 2px solid var(--main);
@@ -86,26 +86,26 @@ img {
 function Home() {
     return (
         <Constante>
-< div className='box'>
-            <div className='text'>
-                <p className="animate__animated animate__fadeInLeft">
-                    Está perdido com as informações que precisa ter sobre seus medicamentos?
-                    O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
-                    medicamentos a qualquer hora e em qualquer lugar!
-                </p>
+            < div className='box'>
+                <div className='text'>
+                    <p className="animate__animated animate__fadeInLeft">
+                        Está perdido com as informações que precisa ter sobre seus medicamentos?
+                        O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
+                        medicamentos a qualquer hora e em qualquer lugar!
+                    </p>
+                </div>
+
+                <div className='button_home'>
+                    <button className="animate__animated animate__fadeInLeft">Enviar</button>
+                </div>
             </div>
 
-            <div className='button_home'>
-                <button className="animate__animated animate__fadeInLeft">Enviar</button>
-            </div>
-            </div>
 
-
-            <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha"/>
+            <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 
 
 
-    </Constante>
+        </Constante>
 
 
 

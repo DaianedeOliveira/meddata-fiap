@@ -30,7 +30,6 @@ margin-top:35px;
         color: var(--main);
         font-size: 24px;
         font-weight: 900;
-        
     }
 
     .text_about{
@@ -41,18 +40,6 @@ margin-top:35px;
         padding-top: 5px;
     }
 
-
-
-    svg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin-bottom: 120px;
-        width: 100%;
-        border: none;
-
-    
-    }
 
     .imagens-box{
         margin-left: 25%;
@@ -76,10 +63,6 @@ margin-top:35px;
 function Sobre() {
     return (
         <Box>
-
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F8F1F1" fillOpacity="1" d="M0,160L48,186.7C96,213,192,267,288,261.3C384,256,480,192,576,192C672,192,768,256,864,272C960,288,1056,256,1152,229.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
             <main>
                 <div className="title_section animate__animated animate__fadeInLeft">
                     <h1 className='title'>Sobre</h1>
