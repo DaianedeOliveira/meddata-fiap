@@ -35,7 +35,7 @@ const Container = styled.div`
 p {
     color: var(--primary);
     font-size: 17px;
-    width: 150%;
+    width: 180%;
     }
 
 
@@ -53,7 +53,7 @@ span:hover {
 
 .title-two {
     color: var(--primary);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 900;
     margin-left: 5px;
     }
