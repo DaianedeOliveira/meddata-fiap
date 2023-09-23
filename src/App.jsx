@@ -9,20 +9,14 @@ import Servicos from './components/Servicos';
 export function App() {
   return (
     <>
-
+  
       <Header />
       <Home/>
       <Sobre/>
       <Servicos/>
       <Footer/>
-
+    
       
-
-      
-
-      
-
-
     </>
   )
 }
