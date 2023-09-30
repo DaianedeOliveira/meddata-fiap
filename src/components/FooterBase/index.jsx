@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 import imglogo from './../../assets/imagens/logo-no-background.png'
 import 'animate.css';
 import { Button2 } from '../../assets/components/Button';
+import './index.css'
 
 
 
@@ -90,13 +91,6 @@ textarea{
 
 
     </div>
-
-
-
-
-
-
-
 
     </Footer>
 
