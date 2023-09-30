@@ -1,17 +1,15 @@
 import { styled } from 'styled-components'
 import './index.css'
 import 'animate.css';
-import boxone from './../../assets/Group 18.png'
-import boxtwo from './../../assets/Group 16.png'
-import boxthree from './../../assets/Group 17.png'
-
+import boxone from './../../assets/imagens/Group 18.png'
+import boxtwo from  './../../assets/imagens/Group 16.png'
+import boxthree from './../../assets/imagens/Group 17.png'
 
 
 const Box = styled.div`
 
 main{
 margin-top:35px;
-
 
 }
 
@@ -58,7 +56,6 @@ margin-top:35px;
 
 
 `
-
 
 function Sobre() {
     return (

@@ -1,7 +1,8 @@
 import { styled } from 'styled-components';
 import 'animate.css';
-import person from './../../assets/Group 4.png';
-import medicine from './../../assets/Group 1.png';
+import person from './../../assets/imagens/Group 4.png';
+import medicine from './../../assets/imagens/Group 1.png';
+
 
 const Container = styled.div`
     background-color: var(--tercery);
@@ -29,19 +30,18 @@ const Container = styled.div`
 .servicotwo {
     display: flex;
     align-items: center;
-    width: 50%;
+    
     }
 
 p {
     color: var(--primary);
     font-size: 17px;
-    width: 180%;
+    width: 80%;
     }
 
 
 span{
     cursor: pointer;
-    font-style: italic;
     font-weight: 900;
 }
 
@@ -56,12 +56,16 @@ span:hover {
     font-size: 20px;
     font-weight: 900;
     margin-left: 5px;
+
     }
 
 img {
     max-width: 100%;
     height: auto;
     }
+
+
+    
 `;
 
 function Servicos() {
@@ -88,7 +92,10 @@ function Servicos() {
                         </p>
                     </div>
                 </div>
+
+
             </section>
+
         </Container>
     );
 }
