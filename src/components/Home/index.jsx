@@ -1,12 +1,11 @@
-import { styled } from 'styled-components'
-import imgs from './../../assets/imagens/pana.svg'
+import { styled } from 'styled-components';
 import { Button } from '../../assets/components/Button';
+import imgs from './../../assets/imagens/pana.svg';
 import 'animate.css';
-import './index.css'
-
+import './index.css';
 
 const Constante = styled.div`
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -15,41 +14,35 @@ display: flex;
     font-weight: 400;
     z-index: 99;
 
+    p{
+        width: 70%;
+        color: #1a1a1a;
+        text-align: left;
+        font-weight: 500;
+    }
 
-.text{
-    width: 70%;
-    margin-left: 260px;
-}
+    span{
+        color: var(--primary);
+        font-weight: 900;
+    }
 
-        p{
-    width: 70%;
-    color: #1a1a1a;
-    text-align: left;
-    font-weight: 500;
+    img {
+        width: 25%;
+        height: 350px;
+        margin-right: 200px;
+        margin-top: 60px;
+    }
 
-}
+    .text{
+        width: 70%;
+        margin-left: 260px;
+    }
 
-span{
-    color: var(--primary);
-    font-weight: 900;
-    
-}
+    .button_home{
+        margin-right: 555px;
+    }
 
-.button_home{
-    margin-right: 555px;
-
-    
-}
-
-
-img {
-    width: 25%;
-    height: 350px;
-    margin-right: 200px;
-    margin-top: 60px;
-}
 `
-
 
 function Home() {
     return (
@@ -68,14 +61,9 @@ function Home() {
                 </div>
             </div>
 
-
             <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 
-
-
         </Constante>
-
-
 
     )
 }

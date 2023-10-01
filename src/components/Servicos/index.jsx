@@ -1,70 +1,64 @@
 import { styled } from 'styled-components';
-import 'animate.css';
 import person from './../../assets/imagens/Group 4.png';
 import medicine from './../../assets/imagens/Group 1.png';
-
+import 'animate.css';
+import './index.css';
 
 const Container = styled.div`
     background-color: var(--tercery);
     width: 100%;
     height: 600px;
 
-.title {
-    text-align: center;
-    color: var(--primary);
-    font-size: 24px;
-    font-weight: 900;
-    padding-top: 2%;
+    p {
+        color: var(--primary);
+        font-size: 17px;
+        margin-left: 5px;
+        width: 80%;
     }
 
-.servico {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 20%;
-    
+    span{
+        cursor: pointer;
+        font-weight: 900;
     }
 
-
-.servicoone,
-.servicotwo {
-    display: flex;
-    align-items: center;
-    
+    span:hover {
+        color: #000;
+        font-weight: 900;
     }
 
-p {
-    color: var(--primary);
-    font-size: 17px;
-    width: 80%;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
-
-span{
-    cursor: pointer;
-    font-weight: 900;
-}
-
-span:hover {
-    color: #000;
-
-    font-weight: 900;
+    .title {
+        text-align: center;
+        color: var(--primary);
+        font-size: 24px;
+        font-weight: 900;
+        padding-top: 2%;
     }
 
-.title-two {
-    color: var(--primary);
-    font-size: 20px;
-    font-weight: 900;
-    margin-left: 5px;
-
+    .servico {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20%;  
+        margin-right: 20%;  
     }
 
-img {
-    max-width: 100%;
-    height: auto;
+    .servicoone,
+    .servicotwo {
+        display: flex;
+        align-items: center;  
     }
 
-
+    .title-two {
+        color: var(--primary);
+        font-size: 20px;
+        font-weight: 900;
+        margin-left: 5px;
+    }
     
 `;
 
@@ -83,6 +77,7 @@ function Servicos() {
                         </p>
                     </div>
                 </div>
+
                 <div className='servicotwo'>
                     <img src={medicine} alt='Medicamentos' />
                     <div>
@@ -92,10 +87,7 @@ function Servicos() {
                         </p>
                     </div>
                 </div>
-
-
             </section>
-
         </Container>
     );
 }
