@@ -1,0 +1,51 @@
+
+.text-white{
+    text-decoration: none;
+    padding-right: 1.5rem;
+    color: aliceblue;
+
+}
+
+.img{
+    padding: 2px;
+    margin-left: 20px;
+
+}
+
+
+.text-white:hover{
+    color: #0d0d0d;
+    font-size: 15px;
+    font-weight: 900;
+
+
+}
+
+.bg{
+    position: fixed;
+    background-color: var(--main);
+    width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 99;
+    height: 100px;
+}
+
+.img{
+    margin-top: 50px;
+}
+
+
+@media (max-width: 950px) {
+    .bg{
+        height: 400px;
+        display: inline-block;
+    }
+
+    .text-white{
+        display: inline-flex;
+    }
+
+}

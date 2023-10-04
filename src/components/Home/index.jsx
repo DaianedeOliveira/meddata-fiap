@@ -57,7 +57,7 @@ function Home() {
                 </div>
 
                 <div className='button_home'>
-                    <Button className="animate__animated animate__fadeInLeft">Enviar</Button>
+                    <Button className="animate__animated animate__fadeInLeft">Enviar</Button> 
                 </div>
             </div>
 
