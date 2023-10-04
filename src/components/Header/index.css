@@ -4,7 +4,15 @@
     padding-right: 1.5rem;
     color: aliceblue;
 
+
 }
+
+.me-auto{
+    padding-left: 250px;
+
+
+}
+
 
 .img{
     padding: 2px;
@@ -30,7 +38,8 @@
     align-items: center;
     justify-content: space-around;
     z-index: 99;
-    height: 100px;
+    height: 60px;
+    padding-left: 100px;
 }
 
 .img{
@@ -41,11 +50,11 @@
 @media (max-width: 950px) {
     .bg{
         height: 400px;
-        display: inline-block;
+    }
+    .me-auto{
+        padding-left: 0;
+
     }
 
-    .text-white{
-        display: inline-flex;
-    }
 
 }
