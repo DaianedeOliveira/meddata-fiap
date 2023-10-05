@@ -20,7 +20,7 @@
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className=" me-auto" >
+            <Nav className="me-auto" >
                 <Nav.Link href="#home" className='text-white'>Início</Nav.Link>
                 <Nav.Link href="#link" className='text-white'>Sobre</Nav.Link>
                 <Nav.Link href="#action/3.1" className='text-white'>Serviços</Nav.Link>

@@ -15,10 +15,10 @@ const Constante = styled.div`
     z-index: 99;
 
     p{
-        width: 70%;
+        width: 69%;
         color: #1a1a1a;
         text-align: left;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     span{
@@ -47,21 +47,23 @@ const Constante = styled.div`
 function Home() {
     return (
         <Constante>
-            < div className='box'>
-                <div className='text'>
-                    <p className="animate__animated animate__fadeInLeft">
-                        Está perdido com as informações que precisa ter sobre seus medicamentos?
-                        O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
-                        medicamentos a qualquer hora e em qualquer lugar!
-                    </p>
+                < div className='box'>
+                    <div className='text'>
+                        <p className="animate__animated animate__fadeInLeft">
+                            Está perdido com as informações que precisa ter sobre seus medicamentos?
+                            O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
+                            medicamentos a qualquer hora e em qualquer lugar!
+                        </p>
+                    </div>
+
+                    <div className='button_home'>
+                        <a href="./login"></a>
+                <Button className="animate__animated animate__fadeInLeft">Entrar</Button> 
+                    </div>
                 </div>
 
-                <div className='button_home'>
-                <Button className="animate__animated animate__fadeInLeft">Enviar</Button> 
-                </div>
-            </div>
+                <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 
-            <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 
         </Constante>
 

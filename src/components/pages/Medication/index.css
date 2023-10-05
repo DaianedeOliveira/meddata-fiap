@@ -1,16 +1,21 @@
 
 
-.form{
-    background-color: var(--main);
-    width: 150%;
-    display: inline-block;
-}
-
-.forms{
-    background-color: var(--main);
+*{
+    background-image: url("./../../../assets/imagens/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: aliceblue;
 }
 
+.input[type=text]{
+    color: aliceblue;
+}
+
+
+.input::placeholder{
+    color: aliceblue;
+    opacity: 60%;
+}
 
 .button{
     align-items: flex-start;

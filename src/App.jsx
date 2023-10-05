@@ -4,6 +4,8 @@ import Home from './components/Home';
 import Sobre from './components/Sobre';
 import Servicos from './components/Servicos';
 import FooterBase from './components/FooterBase';
+import Resultado from './components/pages/Resultado';
+
 
 
 export function App() {
