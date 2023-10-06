@@ -52,7 +52,7 @@ const Constante = styled.div`
 function Home() {
     useEffect(() => {
         // getPatients();
-        getMedication();
+        // getMedication();
     }, []);
 
     return (
