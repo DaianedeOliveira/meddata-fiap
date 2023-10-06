@@ -21,10 +21,10 @@
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto" >
-                    <Nav.Link  href="../pages/Noticias/index.jsxclassName" className='text-white'>Início</Nav.Link> 
-                            <Nav.Link  className='text-white'>Sobre</Nav.Link> 
-                        <Nav.Link  className='text-white'>Serviços</Nav.Link> 
-                        <Nav.Link className='text-white'>Contato</Nav.Link> 
+                    <Nav.Link href="/"className='text-white'>Início</Nav.Link> 
+                            <Nav.Link href="/" className='text-white'>Sobre</Nav.Link> 
+                        <Nav.Link href="/" className='text-white'>Serviços</Nav.Link> 
+                        <Nav.Link href="/" className='text-white'>Contato</Nav.Link> 
                     
                     </Nav>
         </Navbar.Collapse>

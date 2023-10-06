@@ -50,7 +50,7 @@ return (
         </Form.Group>
 
 
-    <Form.Group className="forms mb-3" controlId="formBasicEmail">
+    <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email: </Form.Label>
         <Form.Control type="email" placeholder="Ex: nome1234@gmail.com" />
         <Form.Text className="text-muted"> 

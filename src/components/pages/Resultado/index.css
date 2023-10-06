@@ -11,18 +11,25 @@
 
 .list{
     margin-left: 10%;
-    padding: 50px;
-    width: 80%;
+    margin: 0 auto;
+    width: 800px;
+    border: 2px solid var(--secondary);
+    box-shadow: 5px 15px 0px var(--secondary);
 
 }
 
 .title{
     color: aliceblue;
     font-weight: 600;
+    margin: 0 auto;
+    width: 50%;
     background-color: var(--main);
+    border: 2px solid var(--secondary);
+    box-shadow: 5px 5px 0px var(--secondary);
 }
 
 .text{
     font-weight: 400;
 }
+
 

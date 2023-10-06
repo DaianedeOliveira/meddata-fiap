@@ -32,24 +32,24 @@ import './index.css'
     dragConstraints={{right:0, left: -width}}
     >
 
-    {imgs.map(image => (
-    <motion.div className='item' key={image}>
-        <img src={image} alt=""/>
-    </motion.div>
-))}
-
-
-
-    </motion.div>
+        {imgs.map(image => (
+        <motion.div className='item' key={image}>
+            <img src={image} alt=""/>
+            
         </motion.div>
+        
 
-        </div>
+    ))}
 
-        <div className='circlebox'>    <motion.div className='circle'>+</motion.div></div>
-     
+        
+        </motion.div>
+            </motion.div>
 
-        </div>
-    );
+            </div>
+
+
+            </div>
+        );
     }
 
     export default Noticias;

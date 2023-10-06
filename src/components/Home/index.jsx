@@ -1,6 +1,8 @@
 import { styled } from 'styled-components';
 import { Button } from '../../assets/components/Button';
+import { useEffect } from 'react';
 import imgs from './../../assets/imagens/pana.svg';
+import axios from 'axios';
 import 'animate.css';
 import './index.css';
 import { Link } from 'react-router-dom';
@@ -48,31 +50,65 @@ const Constante = styled.div`
 
 
 function Home() {
+    useEffect(() => {
+        getPatients();
+        getMedication();
+    }, []);
 
     return (
         <Constante>
-                < div className='box-4'>
-                    <div className='text-2'>
-                        <p className="animate__animated animate__fadeInLeft">
-                            Está perdido com as informações que precisa ter sobre seus medicamentos?
-                            O  <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
-                            medicamentos a qualquer hora e em qualquer lugar!
-                        </p>
-                    </div>
+            < div className='box-4'>
+                <div className='text-2'>
+                    <p className="animate__animated animate__fadeInLeft">
+                        Está perdido com as informações que precisa ter sobre seus medicamentos?
+                        O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
+                        medicamentos a qualquer hora e em qualquer lugar!
+                    </p>
+                </div>
 
-                    <div className='button_home'>                            
-                
-            <Link to={"/login"}> <Button  className="animate__animated animate__fadeInLeft">Entrar</Button> </Link> 
-                        </div>
-                    </div>
+                <div className='button_home'>
+
+                    <Link to={"/login"}> <Button className="animate__animated animate__fadeInLeft">Entrar</Button> </Link>
+                </div>
+            </div>
 
 
-                <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
+            <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 
 
         </Constante>
 
     )
+}
+
+async function getPatients() {
+    try {
+        const response = await axios.get(
+            'http://localhost:3000/patients'
+        );
+
+        const responseFhir = response.data;
+        console.log('Response:', JSON.stringify(response, null, 2))
+        return responseFhir;
+    } catch (error) {
+        console.error("Error: " + error.response.status);
+        return null;
+    }
+}
+
+async function getMedication() {
+    try {
+        const response = await axios.get(
+            'http://localhost:3000/medication'
+        );
+
+        const responseFhir = response.data;
+        console.log('Response:', JSON.stringify(response, null, 2))
+        return responseFhir;
+    } catch (error) {
+        console.error("Error: " + error.response.status);
+        return null;
+    }
 }
 
 export default Home;
