@@ -1,6 +1,8 @@
 import { styled } from 'styled-components';
 import { Button } from '../../assets/components/Button';
+import React, { useEffect } from 'react';
 import imgs from './../../assets/imagens/pana.svg';
+import axios from 'axios';
 import 'animate.css';
 import './index.css';
 
@@ -45,6 +47,11 @@ const Constante = styled.div`
 `
 
 function Home() {
+    useEffect(() => {
+        // getPatients();
+        getMedication();
+    }, []);
+
     return (
         <Constante>
             < div className='box'>
@@ -66,6 +73,36 @@ function Home() {
         </Constante>
 
     )
+}
+
+async function getPatients() {
+    try {
+        const response = await axios.get(
+            'http://localhost:3000/patients'
+        );
+
+        const responseFhir = response.data;
+        console.log('Response:', JSON.stringify(response, null, 2))
+        return responseFhir;
+    } catch (error) {
+        console.error("Error: " + error.response.status);
+        return null;
+    }
+}
+
+async function getMedication() {
+    try {
+        const response = await axios.get(
+            'http://localhost:3000/medication'
+        );
+
+        const responseFhir = response.data;
+        console.log('Response:', JSON.stringify(response, null, 2))
+        return responseFhir;
+    } catch (error) {
+        console.error("Error: " + error.response.status);
+        return null;
+    }
 }
 
 export default Home;
