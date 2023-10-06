@@ -5,6 +5,8 @@ import imgs from './../../assets/imagens/pana.svg';
 import axios from 'axios';
 import 'animate.css';
 import './index.css';
+import { Link } from 'react-router-dom';
+
 
 const Constante = styled.div`
     display: flex;
@@ -17,10 +19,10 @@ const Constante = styled.div`
     z-index: 99;
 
     p{
-        width: 70%;
+        width: 69%;
         color: #1a1a1a;
         text-align: left;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     span{
@@ -35,7 +37,7 @@ const Constante = styled.div`
         margin-top: 60px;
     }
 
-    .text{
+    .text-2{
         width: 70%;
         margin-left: 260px;
     }
@@ -46,6 +48,7 @@ const Constante = styled.div`
 
 `
 
+
 function Home() {
     useEffect(() => {
         // getPatients();
@@ -54,8 +57,8 @@ function Home() {
 
     return (
         <Constante>
-            < div className='box'>
-                <div className='text'>
+            < div className='box-4'>
+                <div className='text-2'>
                     <p className="animate__animated animate__fadeInLeft">
                         Está perdido com as informações que precisa ter sobre seus medicamentos?
                         O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
@@ -64,11 +67,14 @@ function Home() {
                 </div>
 
                 <div className='button_home'>
-                    <Button className="animate__animated animate__fadeInLeft">Enviar</Button>
+
+                    <Link to={"/login"}> <Button className="animate__animated animate__fadeInLeft">Entrar</Button> </Link>
                 </div>
             </div>
 
+
             <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
+
 
         </Constante>
 
