@@ -16,7 +16,7 @@
 }
 
 .box:active{
-    border: 6px solid var(--main);
+    border: 5px solid var(--main);
 }
 
 .container2{
