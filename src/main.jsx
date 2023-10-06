@@ -9,6 +9,7 @@ import FooterBase from './components/FooterBase/index.jsx'
 import Footer from './components/Footer/index.jsx'
 import Medication from './components/pages/Medication/index.jsx'
 import Resultado from './components/pages/Resultado/index.jsx'
+import Noticias from './components/pages/Noticias/index.jsx'
 
 
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ import Resultado from './components/pages/Resultado/index.jsx'
   },
 
 
+  {
+    path:"noticias",
+    element: <Noticias/>
+  },
 
 ]);
 
