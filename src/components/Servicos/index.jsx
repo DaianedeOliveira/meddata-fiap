@@ -3,6 +3,7 @@ import person from './../../assets/imagens/Group 4.png';
 import medicine from './../../assets/imagens/Group 1.png';
 import 'animate.css';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     background-color: var(--tercery);
@@ -83,7 +84,7 @@ function Servicos() {
                     <div>
                         <h1 className='title-two'>Acesse as melhores notícias do mundo da saúde</h1>
                         <p>
-                            Temos uma lista de indicações de clínicas e profissionais da saúde disponíveis para lhe atender. <span>Confira!</span>
+                            Temos as melhores notícias na área da saúde, fique atento as atualidades na áreae seja um profissional atualizado! <Link className='links' to={"/noticias"}> <span>Confira!</span></Link>
                         </p>
                     </div>
                 </div>

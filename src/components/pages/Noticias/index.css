@@ -1,40 +1,65 @@
-    .each-slide-effect > div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        height: 350px;
-    }
-    
-    .each-slide-effect span {
-        padding: 20px;
-        font-size: 20px;
-        background: #efefef;
-        text-align: center;
-    }
+.app1{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
+.inner{
+    display: flex;
+}
 
-    .carrossel{
-        box-shadow: 2px 2px 4px #171717;
-        overflow: hidden;
-        height: 500px;
-        width: 500px;
-    }
+.item{
+    min-height: 280px;
+    min-width: 400px;
+    padding: 14px;
+}
 
-    .container{
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        transform: translateX(0);
-    }
+.item img{
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    padding: 20px;
+    pointer-events: none;
+}
 
-    img{
-object-fit: cover;
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+}
 
-    }
+.title_new{
+    text-align: center;
+    color: var(--main);
+    font-size: 24px;
+    font-weight: 900;
+
+}
+
+.divall{
+    padding-top: 100px;
+}
+
+.circlebox{
+    padding-bottom: 20px;
+}
+.circle{
+    text-align: center;
+    color: var(--tercery);
+    font-weight: 900;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid var(--main);
+}
+
+.circle:hover{
+    color: black;
+    transform: scale(1.2);
+    background-color: #205799cd;
+}

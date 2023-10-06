@@ -55,7 +55,7 @@ function Home() {
                     <div className='text-2'>
                         <p className="animate__animated animate__fadeInLeft">
                             Está perdido com as informações que precisa ter sobre seus medicamentos?
-                            O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
+                            O  <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
                             medicamentos a qualquer hora e em qualquer lugar!
                         </p>
                     </div>
