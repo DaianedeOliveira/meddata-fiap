@@ -10,6 +10,8 @@ function Login() {
 return (
     <Form className='forms'>
 
+        <div className='container2'>
+
     <Form.Group className="group mb-3" controlId="formBasicEmail">
         <Form.Label className='box_2'>Email: </Form.Label>
         <Form.Control className='box' type="email" placeholder="Ex: nome1234@gmail.com" />
@@ -26,6 +28,7 @@ return (
     <Link to={"/medication"}>  <Button className="button" type="submit">
         Entrar
     </Button> </Link>
+    </div>
     </Form>
 );
 }
