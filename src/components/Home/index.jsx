@@ -35,7 +35,7 @@ const Constante = styled.div`
         margin-top: 60px;
     }
 
-    .text{
+    .text-2{
         width: 70%;
         margin-left: 260px;
     }
@@ -51,8 +51,8 @@ function Home() {
 
     return (
         <Constante>
-                < div className='box'>
-                    <div className='text'>
+                < div className='box-4'>
+                    <div className='text-2'>
                         <p className="animate__animated animate__fadeInLeft">
                             Está perdido com as informações que precisa ter sobre seus medicamentos?
                             O <span>MedData</span> tem a solução! Somente aqui você encontra os dados sobre seus
@@ -60,9 +60,7 @@ function Home() {
                         </p>
                     </div>
 
-                    <div className='button_home'>
-                            <a href="./login"></a>
-                            
+                    <div className='button_home'>                            
                 
             <Link to={"/login"}> <Button  className="animate__animated animate__fadeInLeft">Entrar</Button> </Link> 
                         </div>

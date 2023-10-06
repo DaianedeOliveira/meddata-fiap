@@ -31,7 +31,7 @@ const Container = styled.div`
         height: auto;
     }
 
-    .title {
+    .title-3 {
         text-align: center;
         color: var(--primary);
         font-size: 24px;
@@ -65,7 +65,7 @@ const Container = styled.div`
 function Servicos() {
     return (
         <Container>
-            <h1 className='title'>Serviços</h1>
+            <h1 className='title-3'>Serviços</h1>
             <section className='servico'>
                 <div className='servicoone'>
                     <img src={person} alt='Uma ilustração 3d de um homem segurando um celular' />

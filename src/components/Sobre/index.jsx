@@ -17,7 +17,7 @@ const Box = styled.div`
         justify-content: space-between;
     }
 
-    .title{
+    .title-2{
         text-align: center;
         color: var(--main);
         font-size: 24px;
@@ -65,7 +65,7 @@ function Sobre() {
             <main>
                 <div className='about'>
                     <div className="title_section animate__animated animate__fadeInLeft">
-                        <h1 className='title'>Sobre</h1>
+                        <h1 className='title-2'>Sobre</h1>
                     </div>
 
                     <div className="text_about">

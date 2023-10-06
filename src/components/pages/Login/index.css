@@ -59,3 +59,7 @@
     box-shadow: 5px 5px 0px var(--secondary);
     }
     
+    .box:active{
+        border-color: aqua;
+        border: 2PX solid;
+    }
