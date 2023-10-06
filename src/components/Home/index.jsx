@@ -3,6 +3,8 @@ import { Button } from '../../assets/components/Button';
 import imgs from './../../assets/imagens/pana.svg';
 import 'animate.css';
 import './index.css';
+import { Link } from 'react-router-dom';
+
 
 const Constante = styled.div`
     display: flex;
@@ -44,7 +46,9 @@ const Constante = styled.div`
 
 `
 
+
 function Home() {
+
     return (
         <Constante>
                 < div className='box'>
@@ -57,10 +61,13 @@ function Home() {
                     </div>
 
                     <div className='button_home'>
-                        <a href="./login"></a>
-                <Button className="animate__animated animate__fadeInLeft">Entrar</Button> 
+                            <a href="./login"></a>
+                            
+                
+            <Link to={"/login"}> <Button  className="animate__animated animate__fadeInLeft">Entrar</Button> </Link> 
+                        </div>
                     </div>
-                </div>
+
 
                 <img className="animate__animated animate__fadeInRight" src={imgs} alt="Um médico segurando uma ficha" />
 

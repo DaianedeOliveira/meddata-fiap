@@ -14,19 +14,19 @@
                         height="130"
                         className="img d-inline-block align-top"
                         alt="React Bootstrap logo"
-                        />
-            
-                <Container>
+                            />
+                    
+                            <Container>
 
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto" >
-                <Nav.Link href="#home" className='text-white'>Início</Nav.Link>
-                <Nav.Link href="#link" className='text-white'>Sobre</Nav.Link>
-                <Nav.Link href="#action/3.1" className='text-white'>Serviços</Nav.Link>
-                <Nav.Link href="#action/3.3" className='text-white'>Contato</Nav.Link>
-            
-            </Nav>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto" >
+                    <Nav.Link   className='text-white'>Início</Nav.Link> 
+                            <Nav.Link  className='text-white'>Sobre</Nav.Link> 
+                        <Nav.Link  className='text-white'>Serviços</Nav.Link> 
+                        <Nav.Link className='text-white'>Contato</Nav.Link> 
+                    
+                    </Nav>
         </Navbar.Collapse>
     </Container>
     </Navbar>
